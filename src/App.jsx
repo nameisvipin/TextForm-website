@@ -95,6 +95,11 @@ export default function App() {
 
         <div className="container my-3">
           <Routes>
+            <Route
+              exact
+              path="/"
+              element={<TextForm heading="Enter the text to analyze below" showAlert={showAlert} mode={mode} />}
+            />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/textform" element={<TextForm heading="Enter the text to analyze below" showAlert={showAlert} mode={mode} />} />
           </Routes>
